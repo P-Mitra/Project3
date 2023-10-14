@@ -1,0 +1,181 @@
+html, body {
+	font-size: 16px;
+	color: #f2f2f2; /* Light gray text */
+	background-color: #1a1a1a; /* Dark background */
+}
+
+a {
+	color: #FF4081; /* Vibrant pink for links */
+}
+
+a:hover {
+	color: #E91E63; /* Darker pink on hover */
+}
+
+section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+
+.intro {
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0; /* Set initial opacity to 0 */
+    transform: translateY(20px); /* Move the text down initially */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Added transition properties */
+}
+
+.section-1:hover .intro {
+    opacity: 1; /* Make the text visible on hover */
+    transform: translateY(0); /* Move the text back up on hover */
+}
+
+.intro span {
+    display: inline-block;
+    opacity: 0; /* Set initial opacity of each word to 0 */
+    transform: translateY(20px); /* Move each word down initially */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Added transition properties */
+}
+
+.section-1:hover .intro span {
+    opacity: 1; /* Make each word visible on hover */
+    transform: translateY(0); /* Move each word back up on hover */
+    transition-delay: 0.2s; /* Add a delay for each word */
+}
+
+.section-1 {
+	background: #1a1a1a;
+}
+
+.section-2 {
+	background-color: #262626; /* Slightly lighter dark background */
+}
+
+.section-3 {
+	background-color: #333333; /* Even lighter dark background */
+}
+
+.section-4 {
+	background-color: #1a1a1a;
+	padding: 0.2rem;
+}
+
+a.nav-item {
+	color: #f2f2f2;
+    font-size: 20px;
+}
+
+a.nav-item:hover {
+	color: #fff;
+    font-size: 25px;
+}
+
+.avatar {
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avatar:hover {
+    transform: scale(1.2);
+}
+
+
+
+.intro-description {
+	padding-top: 1rem;
+}
+
+.social-container img {
+    max-width: 100%;
+    max-height: 100px; /* Adjust the height according to your preference */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out; /* Added transition property */
+}
+
+.social-container img:hover {
+    transform: scale(1.1) translateY(-5px); /* Added scale effect on hover */
+}
+
+
+.project-figure {
+    margin: 0 auto 1rem auto;
+    max-height: 256px;
+    max-width: 256px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-figure:hover {
+    transform: scale(1.2);
+}
+
+
+
+.project-text {
+    text-align: justify;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-text p {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.project-text:hover p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s; /* Adjust the delay as needed */
+}
+
+
+.box {
+	background-color: transparent;
+	border: 2px solid #FF4081; /* Pink border */
+}
+
+.title {
+	color: #fff;
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+.intro {
+	text-align: justify;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.void-background {
+	background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+	.nav-menu {
+		background-color: #1a1a1a;
+	}
+
+	.nav-toggle:hover {
+		background-color: transparent;
+	}
+
+	.nav-toggle span {
+		background-color: #f2f2f2;
+	}
+
+	.nav-toggle span:hover {
+		background-color: #fff;
+	}
+}
+
+.fa:hover{
+    transform: scale(1.2);
+}
+
+
+

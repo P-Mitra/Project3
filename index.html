@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/img/portfolio.png">
+	<meta name="author" content="Priyam Mitra">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left nav-menu">
+				<a class="nav-item" href="https://formsubmit.co/el/romude" >
+					<span style="font-size: 25px;" style = "margin: 50px;"  class="icon">
+						<i class="fa fa-envelope"></i>
+					</span>
+				</a>
+				<a class="nav-item" href="https://github.com/P-Mitra" >
+					<span style="font-size: 25px;" style = "margin: 50px;" class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>				
+			</div>
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+				<a class="nav-item" href="https://drive.google.com/file/d/1ya-2OZBGZyum-u5kO2eWq-TKNeKLLhC9/view?usp=sharing">Resume</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav> 
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/profile.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+				I am a passionate cloud computing enthusiast with expertise in both 
+				Azure and AWS. My journey in the world of cloud technology has been 
+				quite exhilarating, and I've gained valuable knowledge and experience 
+				through various internships and certifications.
+				</p>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<a target="_blank" href="https://drive.google.com/file/d/12vGSYtPCcmwlDhy9cOl7gIvJaOQ77qSr/view?usp=sharing"><img src="assets/img/Project1.png" alt="Image"></a>
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Implemented a connection between On-Premise VM and Spoke1 & Spoke 2 VM via
+                                        a Hub-network using VNG as a next hop.Used technologies such as RAAS, S2S 
+										connection and V-net Peering to establish the connection.The traffic flow 
+										can be seen using the Tracert command inside the powershell the On-Premise VM.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<a target="_blank" href="https://drive.google.com/file/d/1K3KOQK_yvYaHAtccHQG9O2OEflrVHx8K/view?usp=sharing"><img src="assets/img/project-2.jpg" alt="Image"></a>
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Wrote a thesis paper on "Health Care Applications In Fog Computing Using Machine
+										Learning Techniques".Did proper research about the technologies being used 
+										through different papers and made graph on how different ML Techniques produce different results.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Let's Socialize</h3>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.linkedin.com/in/priyam-mitra-27oh/"><img class="" src="assets/img/linkedin.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.instagram.com/_priyam._27/"><img class="" src="assets/img/instagram.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<a>Priyam Mitra</a>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
+</html>
